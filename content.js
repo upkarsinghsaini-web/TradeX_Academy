@@ -1,610 +1,650 @@
-window.TRADOX_CONTENT = {
-  "brand": "TradoX",
+window.TRADEX_CONTENT = {
+  "brand": "TradeX Academy",
   "disclaimer": "Educational content only. No brokerage, execution, personalized investment advice, research recommendations, tips, signals, deposits or withdrawals. All practice is fictional and simulated. Markets involve risk; rules vary by jurisdiction.",
   "courses": [
     {
-      "id": "foundations",
-      "title": "Trading Foundations",
+      "id": "market-foundations",
+      "title": "Market Foundations",
       "level": "Beginner",
       "access": "Free",
-      "duration": "3 hours",
-      "description": "Understand markets, instruments, orders, participants and the difference between investing and trading.",
+      "duration": "2.5 hours",
+      "description": "Understand how financial markets work, market participants, instruments, order types and trading vocabulary.",
       "lessons": [
         {
-          "title": "What Is a Financial Market?",
-          "body": "A financial market is a system where buyers and sellers exchange assets. Prices change as expectations, supply and demand change. A chart is only a record of past prices; it does not tell you what must happen next.",
+          "title": "How Financial Markets Work",
+          "body": "A financial market brings buyers and sellers together to exchange financial instruments. Prices change as participants update their expectations and respond to supply, demand, information and liquidity. A chart records past transactions; it cannot guarantee what happens next.",
           "key_points": [
-            "Markets connect participants who want to buy and sell.",
-            "A rising price means buyers are currently willing to pay more; it does not guarantee a continued rise.",
-            "Trading involves uncertainty, costs and the possibility of loss."
+            "Markets facilitate price discovery and exchange.",
+            "A quoted price may differ from the price at which a large order can execute.",
+            "Trading outcomes are uncertain and costs matter."
           ],
-          "exercise": "Draw a simple flow diagram: buyer → exchange/marketplace → seller. Write one reason each participant might trade.",
-          "video_script": "Video lesson: 4-minute instructor script — introduce markets with a simple example of buyers and sellers at a fruit market, then explain how listed markets differ.",
+          "exercise": "Explain in your own words how a buyer, seller, broker and exchange can interact in a listed-market transaction.",
+          "video_script": "Scene 1: use a simple marketplace analogy. Scene 2: introduce buyers, sellers and price discovery. Scene 3: explain why past prices do not predict future prices.",
           "quiz": [
             {
-              "question": "Which statement is most accurate?",
+              "question": "What does a market price represent?",
               "options": [
-                "Past price movement guarantees the next move",
-                "Markets match buyers and sellers; future prices remain uncertain"
+                "A guaranteed future value",
+                "The price at which participants are currently willing to transact",
+                "A promise of profit"
               ],
               "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "Prices reflect current market conditions and can change quickly."
             }
           ]
         },
         {
-          "title": "Trading vs Investing",
-          "body": "Investing usually focuses on ownership and long-term goals. Trading generally focuses on shorter-term price movements and planned entries and exits. Neither approach guarantees profit.",
+          "title": "Trading, Investing & Speculation",
+          "body": "Investing often focuses on long-term ownership and business or asset fundamentals. Trading generally focuses on planned decisions over shorter horizons. Speculation involves taking risk based on an expectation of future price movement. Labels do not remove risk.",
           "key_points": [
-            "Time horizon is a key difference, not a guarantee of outcome.",
-            "A trading plan should specify setup, risk, entry, exit and review.",
-            "Frequent trading can increase transaction costs and emotional pressure."
+            "Time horizon and decision process often differ.",
+            "A plan should define purpose, risk and review criteria.",
+            "No style guarantees a positive outcome."
           ],
-          "exercise": "Compare a long-term investor and a short-term trader. List the different questions each should ask before acting.",
-          "video_script": "Video lesson: explain the difference using a timeline graphic and a fictional example.",
+          "exercise": "Compare a long-term investor and a short-term trader by time horizon, research inputs and review frequency.",
+          "video_script": "Show two hypothetical people with different time horizons. Explain that neither approach is automatically safer or more profitable.",
           "quiz": [
             {
-              "question": "Which is generally a key difference between investing and trading?",
+              "question": "Which feature belongs in a disciplined trading plan?",
               "options": [
-                "Time horizon and decision process",
-                "One always makes money"
+                "A guaranteed profit target",
+                "A defined risk and exit process",
+                "A promise to recover every loss"
               ],
-              "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "answer": 1,
+              "explanation": "A plan should specify risk and what would invalidate the idea."
             }
           ]
         },
         {
-          "title": "Market Participants and Exchanges",
-          "body": "Participants include individuals, institutions, market makers and companies. Exchanges or other venues provide rules and infrastructure; brokers provide access where permitted.",
+          "title": "Market Participants & Exchanges",
+          "body": "Retail participants, institutions, market makers, brokers and exchanges play different roles. Exchanges provide a venue and rulebook; brokers route or execute customer orders under applicable regulations. Their roles vary by market.",
           "key_points": [
-            "A broker is an intermediary; it is not the market itself.",
-            "Products, protections and trading hours differ by jurisdiction.",
-            "Always verify the regulatory status of a provider independently."
+            "An exchange is not the same as a broker.",
+            "Liquidity describes how readily an asset can be traded without large price impact.",
+            "Regulation and product availability vary by country."
           ],
-          "exercise": "Choose a country and find its official securities regulator and exchange. Record their roles.",
-          "video_script": "Video lesson: walk through the market ecosystem and show where the investor, broker and exchange fit.",
+          "exercise": "Create a glossary with exchange, broker, liquidity, spread and market maker.",
+          "video_script": "Animate a simplified order journey from customer to broker to venue, noting that real routing is more complex.",
           "quiz": [
             {
-              "question": "Who provides market infrastructure and rules?",
+              "question": "Which statement is generally correct?",
               "options": [
-                "Only social media influencers",
-                "Exchanges or other trading venues"
+                "A broker and exchange are always the same entity",
+                "An exchange provides a marketplace under its rules",
+                "Liquidity means guaranteed profit"
               ],
               "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "Exchanges and brokers have distinct roles."
+            }
+          ]
+        },
+        {
+          "title": "Orders, Bid-Ask Spread & Slippage",
+          "body": "A market order prioritizes execution, while a limit order specifies a price boundary and may not execute. The bid is the highest displayed buying price and the ask is the lowest displayed selling price. Slippage is the difference between an expected and actual execution price.",
+          "key_points": [
+            "Order types have different execution trade-offs.",
+            "The spread is an implicit transaction cost.",
+            "Fast markets and thin liquidity can increase slippage."
+          ],
+          "exercise": "Using fictional bid ₹99.90 and ask ₹100.10, calculate the spread and describe what a market buy might pay before fees.",
+          "video_script": "Use a mock order book to demonstrate bid, ask, market and limit orders; label all values fictional.",
+          "quiz": [
+            {
+              "question": "What is a key trade-off of a limit order?",
+              "options": [
+                "It always executes immediately",
+                "It controls the maximum buy price but may not execute",
+                "It removes all market risk"
+              ],
+              "answer": 1,
+              "explanation": "A limit order controls price, not execution certainty."
             }
           ]
         }
       ]
     },
     {
-      "id": "instruments",
-      "title": "Assets and Trading Instruments",
-      "level": "Beginner",
-      "access": "Free",
-      "duration": "3 hours",
-      "description": "Learn the characteristics and risks of shares, ETFs, bonds, currencies, commodities and derivatives.",
+      "id": "candlestick-mastery",
+      "title": "Candlestick Mastery: A–Z",
+      "level": "Beginner → Advanced",
+      "access": "Premium",
+      "duration": "6 hours",
+      "description": "Read candle anatomy, single-candle signals, multi-candle formations, context and confirmation with illustrated examples.",
       "lessons": [
         {
-          "title": "Shares and ETFs",
-          "body": "A share represents an ownership interest in a company. An exchange-traded fund (ETF) holds a basket of assets and trades on an exchange. Both can fall in value.",
+          "title": "Anatomy of a Japanese Candlestick",
+          "body": "Each candle summarizes four values for a chosen period: open, high, low and close (OHLC). The real body spans open to close. The upper shadow extends to the high and the lower shadow to the low. Colour conventions vary by chart settings; green often means close above open and red the reverse.",
           "key_points": [
-            "Single shares carry company-specific risk.",
-            "ETFs may diversify exposure but are not automatically safe.",
-            "Check fees, liquidity, holdings and product documents."
+            "Body = distance between open and close.",
+            "Wicks show the extremes reached during the period.",
+            "A candle is incomplete until its time interval closes."
           ],
-          "exercise": "Compare a fictional single-company share with a broad-market ETF. Identify what risks are shared and what risks differ.",
-          "video_script": "Video lesson: explain ownership, baskets and diversification with simple diagrams.",
+          "exercise": "Draw a candle for O=100, H=108, L=96, C=105. Label body, upper wick and lower wick.",
+          "video_script": "Reveal the OHLC values one by one, then build a candle diagram and identify body and shadows.",
           "quiz": [
             {
-              "question": "What does a share generally represent?",
+              "question": "What does the upper shadow represent?",
               "options": [
-                "An ownership interest in a company",
-                "A guaranteed interest payment"
-              ],
-              "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Bonds and Interest Rates",
-          "body": "A bond is a loan to an issuer. Bond prices can move when interest rates, credit quality or inflation expectations change.",
-          "key_points": [
-            "Bondholders face interest-rate, credit and inflation risks.",
-            "Longer-duration bonds are generally more sensitive to rate changes.",
-            "A bond fund and an individual bond are not identical products."
-          ],
-          "exercise": "Explain in your own words why an existing fixed-rate bond may become less attractive when market rates rise.",
-          "video_script": "Video lesson: use a seesaw diagram to introduce the inverse relationship between yields and prices.",
-          "quiz": [
-            {
-              "question": "Does an ETF automatically eliminate risk?",
-              "options": [
-                "Yes",
-                "No"
+                "The open-to-close range",
+                "The high above the higher of open or close",
+                "The low below the body"
               ],
               "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "The upper shadow connects the top of the body to the period high."
             }
           ]
         },
         {
-          "title": "Currencies, Commodities and Derivatives",
-          "body": "Currencies trade in pairs; commodities include resources such as energy and metals. Derivatives derive value from an underlying asset and can create leverage and complex risks.",
+          "title": "Doji: Indecision, Not a Prediction",
+          "body": "A Doji forms when open and close are very close relative to the candle's range. It can reflect temporary balance or indecision. Its meaning depends on location, trend, volatility and subsequent price behaviour; a Doji alone is not a trade instruction.",
           "key_points": [
-            "Leverage magnifies gains and losses.",
-            "Derivatives can expire or have path-dependent outcomes.",
-            "Products and access rules vary by country; some are unsuitable for many retail users."
+            "Small real body relative to the full range.",
+            "Long-legged, dragonfly and gravestone variations describe different shapes.",
+            "Wait for context and confirmation; no pattern is certain."
           ],
-          "exercise": "Create a risk checklist for a hypothetical currency or commodity product. Include leverage, fees, liquidity and regulation.",
-          "video_script": "Video lesson: explain an underlying asset and a derivative using a simple non-trading analogy.",
+          "exercise": "Find three fictional chart locations for a Doji and write why context changes its interpretation.",
+          "video_script": "Compare a Doji after an extended rise, inside a range and during low-volume consolidation. Ask learners why the same shape can mean different things.",
           "quiz": [
             {
-              "question": "What can leverage do?",
+              "question": "A Doji by itself is best described as:",
               "options": [
-                "Magnify gains and losses",
-                "Remove market risk"
+                "A guaranteed reversal",
+                "A candle with a very small body that may show indecision",
+                "A guaranteed continuation"
+              ],
+              "answer": 1,
+              "explanation": "It is a description of OHLC structure, not a guaranteed signal."
+            }
+          ]
+        },
+        {
+          "title": "Hammer & Hanging Man",
+          "body": "Hammer and Hanging Man have similar shapes: a small body near the top of the range and a long lower shadow. A Hammer is commonly studied after a decline; a Hanging Man after an advance. The candle shape alone is insufficient—trend, location and follow-through matter.",
+          "key_points": [
+            "Long lower shadow relative to the body.",
+            "The preceding trend changes the traditional name and interpretation.",
+            "Confirmation and risk definition are essential."
+          ],
+          "exercise": "Sketch both formations and annotate the trend that precedes each one.",
+          "video_script": "Show the same candle shape in two different trend contexts; label Hammer and Hanging Man.",
+          "quiz": [
+            {
+              "question": "What primarily distinguishes a Hammer from a Hanging Man?",
+              "options": [
+                "Their candle colour only",
+                "The preceding market context",
+                "The chart platform"
+              ],
+              "answer": 1,
+              "explanation": "The preceding trend context is central to the traditional distinction."
+            }
+          ]
+        },
+        {
+          "title": "Shooting Star & Inverted Hammer",
+          "body": "These patterns have a small body near the lower part of the range and a long upper shadow. A Shooting Star is traditionally studied after an advance; an Inverted Hammer after a decline. Their interpretation requires context and later confirmation.",
+          "key_points": [
+            "Long upper shadow shows rejection from higher prices during the period.",
+            "Trend and location matter.",
+            "Do not treat the shape as a standalone forecast."
+          ],
+          "exercise": "Create a two-panel sketch showing the same candle after an uptrend and after a downtrend.",
+          "video_script": "Animate price rising intraperiod and retreating before close, then compare trend contexts.",
+          "quiz": [
+            {
+              "question": "A long upper wick can indicate:",
+              "options": [
+                "Price traded higher but moved back before the close",
+                "Price never moved above the open",
+                "Guaranteed bearish follow-through"
               ],
               "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "The wick records the high relative to the body; it does not guarantee what follows."
+            }
+          ]
+        },
+        {
+          "title": "Bullish & Bearish Engulfing",
+          "body": "An Engulfing formation uses two real bodies: the second body covers the first body's real body. Bullish and bearish labels describe the direction of the second candle relative to the first. Gaps, market structure and session conventions affect exact definitions.",
+          "key_points": [
+            "Compare real bodies, not necessarily full high-low ranges.",
+            "Location near a meaningful area can matter.",
+            "A larger candle can also reflect volatility; size is not certainty."
+          ],
+          "exercise": "Draw two-candle bullish and bearish engulfing examples using fictional OHLC values.",
+          "video_script": "Place two bodies side by side and highlight how the second body engulfs the first; then add trend context.",
+          "quiz": [
+            {
+              "question": "In a standard engulfing definition, what is engulfed?",
+              "options": [
+                "The prior real body",
+                "The prior volume bar",
+                "Every price point in the prior session"
+              ],
+              "answer": 0,
+              "explanation": "The standard pattern compares real bodies; variants exist."
+            }
+          ]
+        },
+        {
+          "title": "Morning Star & Evening Star",
+          "body": "These are three-candle formations traditionally studied as potential shifts in momentum. A Morning Star follows a decline and includes a strong third candle recovering into the first candle's body. An Evening Star is the inverse after an advance. Exact gap rules vary across markets.",
+          "key_points": [
+            "Read all three candles as one formation.",
+            "The third candle's close and location are important in common definitions.",
+            "Market context and confirmation remain necessary."
+          ],
+          "exercise": "Draw a three-candle Morning Star and Evening Star; mark the first candle midpoint.",
+          "video_script": "Build each three-candle sequence frame by frame and identify the transition from pressure to possible change.",
+          "quiz": [
+            {
+              "question": "How many candles are in a classic Morning Star formation?",
+              "options": [
+                "One",
+                "Two",
+                "Three"
+              ],
+              "answer": 2,
+              "explanation": "The classic formation is a three-candle pattern."
+            }
+          ]
+        },
+        {
+          "title": "Harami, Piercing Line & Dark Cloud Cover",
+          "body": "A Harami has a smaller second real body contained within the first body's range under common definitions. Piercing Line and Dark Cloud Cover are two-candle formations where the second candle closes materially into the prior body's range. Definitions can vary by market and source.",
+          "key_points": [
+            "Compare body positions and closes carefully.",
+            "The name does not replace context.",
+            "Use consistent chart settings when studying patterns."
+          ],
+          "exercise": "Create a comparison sheet with one diagram and definition for each pattern.",
+          "video_script": "Show the body boundaries and second-candle close for each formation.",
+          "quiz": [
+            {
+              "question": "A Harami is commonly characterized by:",
+              "options": [
+                "A smaller second body contained within the prior body",
+                "Three identical candles",
+                "A gap that guarantees reversal"
+              ],
+              "answer": 0,
+              "explanation": "The smaller second body is contained within the first body's range in the common definition."
+            }
+          ]
+        },
+        {
+          "title": "Marubozu, Spinning Top & Tweezer Tops/Bottoms",
+          "body": "A Marubozu has little or no shadow, indicating the open or close is near an extreme. A Spinning Top has a small body and shadows on both sides. Tweezer formations show two or more periods testing a similar high or low. These shapes describe price behaviour, not certainty.",
+          "key_points": [
+            "Marubozu: strong directional candle structure.",
+            "Spinning Top: small body with two-sided range.",
+            "Tweezer: repeated test of a similar level; tolerance matters."
+          ],
+          "exercise": "Make a three-row pattern glossary and add one possible contextual question for each pattern.",
+          "video_script": "Use side-by-side candle drawings to compare body-to-wick proportions and repeated extremes.",
+          "quiz": [
+            {
+              "question": "Which pattern often has a small body with upper and lower shadows?",
+              "options": [
+                "Spinning Top",
+                "Marubozu",
+                "Engulfing"
+              ],
+              "answer": 0,
+              "explanation": "A Spinning Top is characterized by a relatively small body and shadows on both sides."
+            }
+          ]
+        },
+        {
+          "title": "Pattern Context, Confirmation & Failure",
+          "body": "Candlestick patterns are descriptive tools. Their usefulness depends on trend, support/resistance, volatility, liquidity, timeframe and confirmation. A pattern can fail. Define invalidation and risk before considering any hypothetical setup, and record both successful and unsuccessful examples.",
+          "key_points": [
+            "Context matters more than memorizing names.",
+            "Confirmation reduces some ambiguity but cannot eliminate risk.",
+            "Backtesting can be affected by hindsight and selection bias."
+          ],
+          "exercise": "Review 20 historical examples without placing trades. Record context, expected interpretation and what happened next.",
+          "video_script": "Show one pattern in a trend, range and noisy market; demonstrate why identical shapes can have different outcomes.",
+          "quiz": [
+            {
+              "question": "What is the most responsible way to use a candlestick pattern?",
+              "options": [
+                "Trade every occurrence",
+                "Combine it with context, a defined invalidation point and risk controls",
+                "Assume it always works"
+              ],
+              "answer": 1,
+              "explanation": "Patterns are uncertain and should be studied with context and risk controls."
             }
           ]
         }
       ]
     },
     {
-      "id": "charts",
-      "title": "Charts and Technical Analysis",
-      "level": "Beginner–Intermediate",
+      "id": "technical-analysis",
+      "title": "Technical Analysis Toolkit",
+      "level": "Intermediate",
       "access": "Premium",
       "duration": "5 hours",
-      "description": "Read price charts, trends, support/resistance, volume and common indicators without treating them as predictions.",
+      "description": "Learn market structure, support and resistance, trendlines, indicators, volume and multi-timeframe analysis.",
       "lessons": [
         {
-          "title": "Candlesticks and Timeframes",
-          "body": "A candlestick summarizes open, high, low and close for a selected period. The same market can look different on different timeframes.",
+          "title": "Market Structure: Trends & Ranges",
+          "body": "A trend is often described through sequences of swing highs and lows. An uptrend commonly forms higher highs and higher lows; a downtrend lower highs and lower lows. A range shows repeated reactions around boundaries. These are analytical descriptions, not guarantees.",
           "key_points": [
-            "The candle body shows the open-close range.",
-            "Wicks show the extremes reached during the period.",
-            "A candle pattern is context, not a standalone signal."
+            "Identify swing points consistently.",
+            "Ranges can transition into trends and vice versa.",
+            "Avoid forcing a trend label onto unclear price action."
           ],
-          "exercise": "Sketch three candles: bullish, bearish and small-bodied. Label OHLC and describe what each does and does not tell you.",
-          "video_script": "Video lesson: animate a candle forming from open to close.",
+          "exercise": "Mark 10 swing points on a fictional chart and classify it as trend, range or unclear.",
+          "video_script": "Trace swing highs and lows on three fictional charts and label structure.",
           "quiz": [
             {
-              "question": "What does a candle wick show?",
+              "question": "A common uptrend structure is:",
               "options": [
-                "The period's price extremes beyond the body",
-                "The guaranteed next price"
+                "Higher highs and higher lows",
+                "Lower highs and lower lows",
+                "No swing structure"
               ],
               "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "Higher highs and higher lows are a common description of an uptrend."
             }
           ]
         },
         {
-          "title": "Trend, Support and Resistance",
-          "body": "A trend describes the broad direction of price action. Support and resistance are zones where price has previously reacted; they are not guaranteed barriers.",
+          "title": "Support & Resistance Zones",
+          "body": "Support and resistance are areas where price has previously reacted or where market participants may pay attention. They are better treated as zones than exact lines. Levels can break, fail or change role; no level guarantees a reversal.",
           "key_points": [
-            "Use zones rather than pretending levels are exact.",
-            "A break can fail; wait for confirmation consistent with your plan.",
-            "Avoid drawing levels to justify a trade after the fact."
+            "Use zones and note repeated reactions.",
+            "A break is not confirmed by a line touch alone.",
+            "Prior levels can change role, but not mechanically."
           ],
-          "exercise": "On a paper chart, mark two possible support zones and two resistance zones. Write what would invalidate each idea.",
-          "video_script": "Video lesson: annotate a fictional chart and show a false breakout.",
+          "exercise": "Mark three zones on a historical chart and record why each zone was selected.",
+          "video_script": "Highlight reaction clusters and compare zone width across volatile and quiet instruments.",
           "quiz": [
             {
               "question": "Support and resistance are best treated as:",
               "options": [
-                "Guaranteed barriers",
-                "Potential reaction zones"
+                "Guaranteed turning points",
+                "Areas of potential market interest",
+                "Fixed laws"
               ],
               "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "They are analytical zones, not guaranteed barriers."
             }
           ]
         },
         {
-          "title": "Volume and Indicators",
-          "body": "Volume can add context to price movement. Indicators transform price or volume data; they lag or simplify information and can produce false signals.",
+          "title": "Trendlines, Channels & Breakouts",
+          "body": "Trendlines connect selected swing points; channels add a parallel boundary. Breakouts occur when price moves beyond a defined range or level, but false breakouts are common. Volume, closing basis and retests are among the context analysts may examine.",
           "key_points": [
-            "Moving averages smooth price data but lag.",
-            "RSI measures momentum, not certainty about reversal.",
-            "More indicators do not automatically improve decisions."
+            "Two points draw a line; additional touches may strengthen its relevance but do not prove it.",
+            "Define the breakout condition before reviewing the outcome.",
+            "False breaks are part of market behaviour."
           ],
-          "exercise": "Write a one-page rule set using price structure plus one indicator. State when you will not take a setup.",
-          "video_script": "Video lesson: compare raw price with a moving average and RSI panel.",
+          "exercise": "Write a rule for a hypothetical breakout that specifies close, retest and invalidation.",
+          "video_script": "Animate a range, a breakout, a failed breakout and a retest; emphasize that each is only a scenario.",
           "quiz": [
             {
-              "question": "Do more indicators guarantee better decisions?",
+              "question": "A false breakout is:",
               "options": [
-                "No",
-                "Yes"
+                "A move beyond a level that does not sustain",
+                "A guaranteed profitable setup",
+                "A candle with no wick"
               ],
               "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "Price can move beyond a level and then return inside the prior range."
+            }
+          ]
+        },
+        {
+          "title": "RSI, MACD & Moving Averages",
+          "body": "Indicators transform price or volume data. RSI is a momentum oscillator; MACD compares moving averages; moving averages smooth price data. Indicators are lagging or derived tools and can give conflicting readings, especially in sideways markets.",
+          "key_points": [
+            "Understand the formula and settings before interpreting an indicator.",
+            "Overbought does not automatically mean sell; oversold does not automatically mean buy.",
+            "Avoid stacking many correlated indicators."
+          ],
+          "exercise": "Compare RSI and a moving average on the same historical chart; note where they disagree.",
+          "video_script": "Build a moving average, then explain RSI and MACD using simple visual overlays.",
+          "quiz": [
+            {
+              "question": "An RSI reading in an overbought region means:",
+              "options": [
+                "Price must fall immediately",
+                "Momentum is elevated under the chosen RSI settings",
+                "A guaranteed sell signal"
+              ],
+              "answer": 1,
+              "explanation": "It describes a momentum condition, not a guaranteed reversal."
+            }
+          ]
+        },
+        {
+          "title": "Volume, Volatility & Multi-Timeframe Analysis",
+          "body": "Volume measures activity under the data provider's convention. Volatility measures the magnitude of price variation. Multi-timeframe analysis compares broader structure with a more detailed view; mismatched timeframes can create conflicting interpretations.",
+          "key_points": [
+            "Volume data differs across asset classes and venues.",
+            "Volatility affects stop distance and position sizing.",
+            "Use a consistent hierarchy of timeframes."
+          ],
+          "exercise": "Write a top-down review: weekly context, daily structure and an intraday observation—without making a trade recommendation.",
+          "video_script": "Zoom from a broad chart into a shorter timeframe and show how context changes.",
+          "quiz": [
+            {
+              "question": "Why does volatility matter for risk planning?",
+              "options": [
+                "It changes the potential size and speed of price movement",
+                "It guarantees a trend",
+                "It removes transaction costs"
+              ],
+              "answer": 0,
+              "explanation": "Higher volatility can mean larger and faster price moves."
             }
           ]
         }
       ]
     },
     {
-      "id": "risk",
-      "title": "Risk Management and Position Sizing",
-      "level": "Beginner–Advanced",
-      "access": "Free",
-      "duration": "4 hours",
-      "description": "Build the habits that help limit losses and protect decision quality. Risk controls cannot eliminate risk.",
-      "lessons": [
-        {
-          "title": "Risk Before Reward",
-          "body": "A trade idea should begin with the amount you could lose, not the amount you hope to make. Stops may slip or fail to execute at the expected price.",
-          "key_points": [
-            "Define invalidation before entry.",
-            "Never risk money needed for essentials.",
-            "A stop-loss is a tool, not a guarantee of maximum loss."
-          ],
-          "exercise": "Write a personal no-trade checklist with at least five conditions.",
-          "video_script": "Video lesson: demonstrate why planning the exit first matters.",
-          "quiz": [
-            {
-              "question": "What should be defined before entering a hypothetical trade?",
-              "options": [
-                "The amount at risk and invalidation",
-                "Only the hoped-for profit"
-              ],
-              "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Position Sizing",
-          "body": "Position size connects account value, planned risk and the distance to the invalidation point. Fees, slippage and contract specifications must also be considered.",
-          "key_points": [
-            "Illustrative formula: units = planned cash risk ÷ risk per unit.",
-            "This is an educational calculation, not a recommendation to trade.",
-            "If the calculated size is too large or unclear, skip the trade."
-          ],
-          "exercise": "Practice: hypothetical account value ₹100,000; planned risk 0.5% = ₹500; risk per unit ₹10. Calculate the illustrative unit count.",
-          "video_script": "Video lesson: solve a sample position-sizing calculation step by step.",
-          "quiz": [
-            {
-              "question": "A 50% drawdown requires what gain to recover?",
-              "options": [
-                "50%",
-                "100%"
-              ],
-              "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Drawdown, Leverage and Risk of Ruin",
-          "body": "A drawdown is a decline from an account peak. Recovering from large losses requires disproportionately larger gains. Leverage increases exposure relative to capital.",
-          "key_points": [
-            "A 50% loss requires a 100% gain to recover.",
-            "Repeated losses can compound quickly.",
-            "Avoid borrowing or using high leverage to recover losses."
-          ],
-          "exercise": "Calculate the gain needed to recover from 10%, 20% and 40% drawdowns.",
-          "video_script": "Video lesson: visualize drawdown and recovery math.",
-          "quiz": [
-            {
-              "question": "Does a stop-loss guarantee the exact exit price?",
-              "options": [
-                "No",
-                "Yes"
-              ],
-              "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "strategy",
-      "title": "Building a Trading Plan",
+      "id": "risk-discipline",
+      "title": "Risk Management & Trading Psychology",
       "level": "Intermediate",
       "access": "Premium",
       "duration": "4 hours",
-      "description": "Turn ideas into testable rules and learn when not to trade.",
+      "description": "Position sizing, risk-reward arithmetic, drawdowns, journaling, behavioural discipline and responsible practice.",
       "lessons": [
         {
-          "title": "Define a Setup",
-          "body": "A setup is a repeatable set of conditions that may create an opportunity. It should be specific enough that two people can identify it similarly.",
+          "title": "Risk Per Trade & Position Sizing",
+          "body": "Position sizing connects account value, a chosen risk budget and the distance to a hypothetical invalidation level. A simplified formula is risk budget ÷ risk per unit. Real calculations must account for contract specifications, currency conversion, fees, slippage and gaps.",
           "key_points": [
-            "Specify market, timeframe, context and trigger.",
-            "Define invalidation and exit rules in advance.",
-            "Avoid changing rules after every outcome."
+            "Risk budget is not a target loss to seek.",
+            "Never assume a stop guarantees the exact exit price.",
+            "Instrument specifications and local rules matter."
           ],
-          "exercise": "Write a one-paragraph setup with objective conditions and one invalidation rule.",
-          "video_script": "Video lesson: convert a vague idea into measurable rules.",
+          "exercise": "For a fictional account of ₹100,000, a 0.5% risk budget and ₹10 risk per unit, calculate the illustrative number of units.",
+          "video_script": "Work through the formula with fictional numbers and list omitted real-world costs.",
           "quiz": [
             {
-              "question": "A useful setup should be:",
+              "question": "A simplified position-size calculation is:",
               "options": [
-                "Specific and testable",
-                "Changed after every outcome"
+                "Risk budget divided by risk per unit",
+                "Account balance multiplied by leverage",
+                "Profit target divided by fees"
               ],
               "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "The simplified formula is risk budget divided by risk per unit."
             }
           ]
         },
         {
-          "title": "Backtesting and Forward Testing",
-          "body": "Backtesting applies rules to historical data. Forward testing applies them prospectively in a simulator or observation journal. Both have limitations.",
+          "title": "Risk-Reward, Drawdown & Expectancy",
+          "body": "Risk-reward compares potential gain with potential loss in a defined scenario. Drawdown measures decline from a previous equity peak. Expectancy estimates average outcome across a series of trades, but historical estimates may not persist and can be distorted by small samples.",
           "key_points": [
-            "Beware look-ahead and survivorship bias.",
-            "Include realistic fees and slippage assumptions.",
-            "A small sample can produce misleading results."
+            "Win rate alone does not describe a strategy.",
+            "Costs affect expectancy.",
+            "A drawdown can be deeper or longer than expected."
           ],
-          "exercise": "Create a 20-example test log template with date, setup, result, rule-following and notes.",
-          "video_script": "Video lesson: show a fictional test log and explain common biases.",
+          "exercise": "Calculate a hypothetical 2:1 reward-to-risk ratio and explain why it does not guarantee a profitable strategy.",
+          "video_script": "Use a simple series of hypothetical wins and losses to explain expectancy and drawdown.",
           "quiz": [
             {
-              "question": "Backtesting should account for:",
+              "question": "Does a 2:1 reward-to-risk ratio guarantee profit?",
               "options": [
-                "Fees and slippage assumptions",
-                "Only winning examples"
-              ],
-              "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Trading Journal and Review",
-          "body": "A journal records decisions and process, not just profit and loss. Review helps identify repeatable mistakes and strengths.",
-          "key_points": [
-            "Record the plan before the outcome.",
-            "Separate process quality from outcome.",
-            "Do not optimize a strategy from a handful of trades."
-          ],
-          "exercise": "Review five fictional trades and categorize each as followed plan / broke plan.",
-          "video_script": "Video lesson: conduct a weekly review using a sample journal.",
-          "quiz": [
-            {
-              "question": "A journal should record:",
-              "options": [
-                "Only profit",
-                "Decision process and rule-following"
+                "Yes",
+                "No; outcomes, win rate and costs still matter",
+                "Only on daily charts"
               ],
               "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "The ratio alone says nothing about the probability or consistency of outcomes."
+            }
+          ]
+        },
+        {
+          "title": "Trading Journal & Review",
+          "body": "A journal records the hypothesis, context, risk, execution assumptions, emotions and outcome. A good review evaluates process quality separately from whether a single outcome was profitable. Avoid changing rules after every isolated result.",
+          "key_points": [
+            "Record decisions before the outcome where possible.",
+            "Track rule adherence and costs.",
+            "Review samples large enough to be informative."
+          ],
+          "exercise": "Create a journal template with date, instrument, thesis, invalidation, risk, result and lesson.",
+          "video_script": "Walk through a fictional journal entry and show how a process review differs from profit review.",
+          "quiz": [
+            {
+              "question": "A useful journal should capture:",
+              "options": [
+                "Only profitable trades",
+                "The hypothesis, risk, execution and review",
+                "Only the final balance"
+              ],
+              "answer": 1,
+              "explanation": "A journal is useful when it records both the decision process and the outcome."
+            }
+          ]
+        },
+        {
+          "title": "Biases, Discipline & When Not to Trade",
+          "body": "Common behavioural risks include FOMO, revenge trading, confirmation bias, overconfidence and loss aversion. A written checklist, breaks and a no-trade rule can help reduce impulsive decisions. Not participating is also a valid decision.",
+          "key_points": [
+            "Recognize emotional triggers.",
+            "Do not increase risk to recover losses.",
+            "A no-trade condition belongs in a plan."
+          ],
+          "exercise": "Write three personal warning signs and a pause rule for each.",
+          "video_script": "Use short scenarios to identify FOMO, revenge trading and confirmation bias.",
+          "quiz": [
+            {
+              "question": "After an unexpected loss, a disciplined response is to:",
+              "options": [
+                "Immediately double risk to recover",
+                "Pause and review the plan and process",
+                "Ignore the risk limit"
+              ],
+              "answer": 1,
+              "explanation": "A pause helps prevent emotional escalation."
             }
           ]
         }
       ]
     },
     {
-      "id": "psychology",
-      "title": "Trading Psychology and Discipline",
-      "level": "Intermediate",
-      "access": "Premium",
-      "duration": "3 hours",
-      "description": "Understand common behavioral traps and create routines that support deliberate decisions.",
-      "lessons": [
-        {
-          "title": "FOMO and Overtrading",
-          "body": "Fear of missing out can lead to late entries and poor decisions. Not trading is a valid decision.",
-          "key_points": [
-            "A missed move is not a loss.",
-            "Set a maximum number of planned decisions per session.",
-            "Take breaks after emotional or unexpected outcomes."
-          ],
-          "exercise": "Write a short response you will use when you feel pressure to chase a fast move.",
-          "video_script": "Video lesson: role-play a FOMO moment and demonstrate a pause routine.",
-          "quiz": [
-            {
-              "question": "A missed move is:",
-              "options": [
-                "Automatically a loss",
-                "Not a loss; skipping can be valid"
-              ],
-              "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Loss Aversion and Revenge Trading",
-          "body": "Loss aversion can make people hold losing positions too long or close winners too early. Revenge trading tries to recover losses quickly and often increases risk.",
-          "key_points": [
-            "Use predefined exits rather than emotional negotiation.",
-            "After a loss, pause and review before making another decision.",
-            "If distress affects daily life, step away and seek appropriate support."
-          ],
-          "exercise": "Create a cooling-off rule for after two consecutive planned losses.",
-          "video_script": "Video lesson: explain the emotional cycle after a loss.",
-          "quiz": [
-            {
-              "question": "Revenge trading means:",
-              "options": [
-                "Following a tested plan",
-                "Trying to recover losses quickly through more risk"
-              ],
-              "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Routine and Wellbeing",
-          "body": "Sleep, stress, time pressure and financial worries can affect judgment. Trading should never displace essential needs or wellbeing.",
-          "key_points": [
-            "Do not trade with borrowed or essential money.",
-            "Set time limits and screen breaks.",
-            "Stop if you feel unable to follow your rules."
-          ],
-          "exercise": "Design a 15-minute pre-session and post-session routine.",
-          "video_script": "Video lesson: build a balanced routine and discuss when to step away.",
-          "quiz": [
-            {
-              "question": "If stress prevents rule-following, a sensible action is:",
-              "options": [
-                "Step away",
-                "Increase size"
-              ],
-              "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "fundamental",
-      "title": "Fundamental Analysis",
-      "level": "Intermediate–Advanced",
-      "access": "Premium",
-      "duration": "5 hours",
-      "description": "Learn how to read company information and economic context without turning education into stock tips.",
-      "lessons": [
-        {
-          "title": "Financial Statements",
-          "body": "The income statement, balance sheet and cash-flow statement describe different aspects of a business. Read them together and compare periods.",
-          "key_points": [
-            "Revenue is not the same as profit.",
-            "Cash flow can differ from accounting earnings.",
-            "Accounting policies and one-off items matter."
-          ],
-          "exercise": "Use a fictional company to identify revenue, operating profit, cash and debt in a sample summary.",
-          "video_script": "Video lesson: tour the three core financial statements.",
-          "quiz": [
-            {
-              "question": "Revenue and profit are:",
-              "options": [
-                "The same thing",
-                "Different measures"
-              ],
-              "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Ratios and Valuation Basics",
-          "body": "Ratios can help compare businesses, but they depend on accounting choices, sector context and growth expectations.",
-          "key_points": [
-            "P/E is not meaningful in every situation.",
-            "Compare like with like across sectors and periods.",
-            "Valuation is an estimate, not a precise fact."
-          ],
-          "exercise": "Compare two fictional firms using P/E, debt-to-equity and revenue growth. List limitations.",
-          "video_script": "Video lesson: explain valuation multiples using a simple example.",
-          "quiz": [
-            {
-              "question": "A valuation ratio should be compared:",
-              "options": [
-                "With context and relevant peers",
-                "Without context"
-              ],
-              "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        },
-        {
-          "title": "Economic Indicators",
-          "body": "Inflation, interest rates, employment and growth can influence markets through multiple channels. Market reactions depend on expectations as well as the headline number.",
-          "key_points": [
-            "An announcement may already be priced in.",
-            "Correlation does not prove causation.",
-            "Economic data is revised and can be noisy."
-          ],
-          "exercise": "Choose one indicator and explain two possible channels through which it may affect a sector.",
-          "video_script": "Video lesson: map an economic release to possible market channels.",
-          "quiz": [
-            {
-              "question": "Markets react to economic news based on:",
-              "options": [
-                "Only the headline",
-                "Expectations as well as the data"
-              ],
-              "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "advanced",
-      "title": "Advanced Practice, Ethics and Global Readiness",
+      "id": "market-products",
+      "title": "Markets, Products & Global Awareness",
       "level": "Advanced",
       "access": "Premium",
-      "duration": "5 hours",
-      "description": "Study execution quality, portfolio exposure, scams, compliance awareness and responsible participation.",
+      "duration": "3 hours",
+      "description": "Understand equities, funds, bonds, derivatives, FX, crypto risks, regulation and market due diligence.",
       "lessons": [
         {
-          "title": "Execution, Liquidity and Costs",
-          "body": "Execution quality depends on liquidity, spread, order type, volatility and venue. Displayed prices may differ from actual fills.",
+          "title": "Equities, ETFs, Funds & Bonds",
+          "body": "Equities represent ownership interests; bonds are debt instruments; funds pool assets under a mandate; ETFs trade on exchanges in many markets. Fees, liquidity, tracking, credit risk and jurisdictional rules differ by product.",
           "key_points": [
-            "Market orders prioritize execution, not price certainty.",
-            "Limit orders control price but may not execute.",
-            "Include spreads, commissions, taxes and slippage in analysis."
+            "Read product documents and fee schedules.",
+            "Diversification does not eliminate risk.",
+            "Tax treatment and investor protections vary by jurisdiction."
           ],
-          "exercise": "Compare two fictional order-book scenarios and explain which has greater liquidity risk.",
-          "video_script": "Video lesson: illustrate bid, ask, spread and slippage.",
+          "exercise": "Compare a fictional equity, bond and diversified fund by risk source and time horizon.",
+          "video_script": "Introduce each instrument with a simple ownership or lending analogy.",
           "quiz": [
             {
-              "question": "A market order prioritizes:",
+              "question": "A bond is generally a:",
               "options": [
-                "Execution, not price certainty",
-                "A guaranteed price"
+                "Debt instrument",
+                "Company ownership share",
+                "Guaranteed bank deposit"
               ],
               "answer": 0,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "A bond generally represents a debt obligation; credit and market risks remain."
             }
           ]
         },
         {
-          "title": "Portfolio Exposure and Correlation",
-          "body": "Holding multiple assets does not guarantee diversification. Assets can become more correlated during market stress.",
+          "title": "Derivatives: Futures & Options Basics",
+          "body": "Derivatives derive value from an underlying reference. Futures create standardized contractual obligations; options provide rights under specified terms, with premiums and expiry. Leverage, margin, expiry, liquidity and gap risk can produce rapid losses.",
           "key_points": [
-            "Measure exposure by risk drivers, not just number of holdings.",
-            "Concentration can exist across different-looking assets.",
-            "Diversification does not prevent all losses."
+            "Understand contract size, expiry and settlement.",
+            "Options buyers and sellers have different risk profiles.",
+            "Derivatives are not suitable for every participant."
           ],
-          "exercise": "Create a fictional portfolio with three assets and identify overlapping risk factors.",
-          "video_script": "Video lesson: explain correlation using two fictional asset series.",
+          "exercise": "List the contract terms you would verify before studying a hypothetical derivative.",
+          "video_script": "Explain an underlying asset, contract multiplier, expiry and option premium with fictional examples.",
           "quiz": [
             {
-              "question": "Diversification:",
+              "question": "An option buyer generally pays:",
               "options": [
-                "Guarantees no losses",
-                "Can reduce some concentration risk but cannot prevent all losses"
+                "A premium",
+                "No cost",
+                "A guaranteed refund"
               ],
-              "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "answer": 0,
+              "explanation": "The option buyer typically pays a premium for the contractual right."
             }
           ]
         },
         {
-          "title": "Scams, Regulation and Ethics",
-          "body": "Be cautious of guaranteed returns, pressure to deposit, fake screenshots, unlicensed providers and paid signal groups. Rules differ by country.",
+          "title": "FX, Crypto & Cross-Border Risk",
+          "body": "Foreign exchange and crypto markets have distinct structures, counterparties, custody, settlement and regulatory risks. Products and platforms available in one country may be restricted or unauthorized in another. Verify authorization through official regulators before engaging.",
           "key_points": [
-            "Verify firms and professionals with the relevant official regulator.",
-            "Never share passwords, OTPs or remote-access control.",
-            "This academy is educational and does not provide personalized advice or signals."
+            "Check the regulator and legal entity, not just a brand name.",
+            "Understand custody, counterparty and withdrawal risks.",
+            "Cross-border rules can differ materially."
           ],
-          "exercise": "Evaluate a fictional promotional message promising guaranteed daily returns. List red flags and verification steps.",
-          "video_script": "Video lesson: scam-spotting walkthrough and a regulator-check demonstration.",
+          "exercise": "Create a due-diligence checklist for a financial platform using official regulator registers.",
+          "video_script": "Compare exchange-traded, dealer-based and digital-asset structures without endorsing a platform.",
           "quiz": [
             {
-              "question": "A guaranteed daily return promotion is:",
+              "question": "Before using a financial platform, you should first:",
               "options": [
-                "A red flag requiring skepticism",
-                "Proof of legitimacy"
+                "Trust social media testimonials",
+                "Verify the legal entity and authorization with the relevant regulator",
+                "Deposit a small amount to test it"
               ],
               "answer": 1,
-              "explanation": "Review the lesson notes and remember that markets are uncertain; apply the concept rather than memorizing a promise."
+              "explanation": "Independent regulatory verification is a core due-diligence step."
+            }
+          ]
+        },
+        {
+          "title": "Regulation, Fraud Awareness & Due Diligence",
+          "body": "Financial regulation is jurisdiction-specific. Be alert to guaranteed returns, pressure to deposit, opaque ownership, referral-driven income promises and requests to transfer funds to personal accounts. Education is not a substitute for licensed financial advice.",
+          "key_points": [
+            "Verify registrations on official regulator websites.",
+            "Read terms, fees, complaints process and withdrawal rules.",
+            "Do not share passwords, OTPs or remote access."
+          ],
+          "exercise": "Prepare a red-flag checklist for evaluating an online investment or trading service.",
+          "video_script": "Present a fictional scam pitch and pause at each red flag for learner discussion.",
+          "quiz": [
+            {
+              "question": "Which is a major warning sign?",
+              "options": [
+                "Clear legal entity and fee disclosures",
+                "Guaranteed high returns with pressure to deposit quickly",
+                "A published risk disclosure"
+              ],
+              "answer": 1,
+              "explanation": "Guaranteed returns and urgency are common warning signs."
             }
           ]
         }

@@ -1,9 +1,9 @@
 {
-  "name": "TradoX Academy",
-  "short_name": "TradoX Academy",
+  "name": "TradeX Academy",
+  "short_name": "TradeX",
   "start_url": "./",
   "display": "standalone",
-  "background_color": "#090e1b",
-  "theme_color": "#090e1b",
-  "description": "Trading education and fictional practice lab"
+  "background_color": "#080e19",
+  "theme_color": "#080e19",
+  "description": "Premium trading and market education."
 }

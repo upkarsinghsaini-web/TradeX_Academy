@@ -1,29 +1,27 @@
-# TradoX Academy — MVP v1
+# TradeX Academy — Premium Education Platform (Prototype v1)
 
-## What's included
-- Responsive dark-theme learning website / installable PWA shell
-- 8 courses, 24 lessons: Beginner to Advanced
-- Lesson notes, key points, practical exercises, quiz checks and original video lesson scripts/storyboards
-- Local lesson completion tracking (stored only in this browser)
-- Fictional position-sizing calculator
-- Free / Premium course labels and filtering
+## Included
+- Responsive dark premium-style academy interface and TradeX logo.
+- Home dashboard, course library, candlestick atlas with 24 original SVG-style candle diagrams, chart laboratory, practice calculator, quiz, learning progress, membership and support pages.
+- Four curriculum paths: Market Foundations (free preview), Candlestick Mastery A–Z (premium), Technical Analysis (premium), Risk Management & Psychology (premium), Global Markets & Due Diligence (premium).
+- Lesson notes, key points, exercises, quiz checks and original video lesson storyboards.
+- Local progress storage in the current browser.
+- Installable PWA shell / service worker.
 
-## Important limitations
-- This is a front-end prototype. No user accounts, server, payments, subscriptions, analytics or admin dashboard.
-- Premium labels are demonstrations only; content is not actually access-controlled.
-- Video scripts/storyboards are included; finished video files are not.
-- Visual learning is provided through written diagram prompts and simple process visuals; bespoke image assets are not included.
-- The calculator is educational arithmetic only. No broker connection, live quotes, order execution, deposits or withdrawals.
-- Progress is stored in local browser storage and does not sync between devices.
-- Google Fonts require internet; the app itself can still use fallback fonts.
+## Important launch limitations
+This is a front-end prototype, not a production SaaS yet. It does NOT include secure user accounts, cloud database, server-side premium entitlement, real payment checkout, admin CMS, finished recorded videos, live market data, broker connectivity or native Android APK. Premium gating in this prototype is a demonstration only and can be bypassed by a technical user; do not sell access until server-side authentication and entitlement checks are implemented.
 
-## Run on a laptop
-1. Extract the ZIP.
-2. Open `index.html` in a modern browser.
-3. For PWA install/offline features, serve the folder over localhost or publish it to an HTTPS static host. Opening the file directly may not enable service workers.
+The support mailbox is not created. Register and control a domain first, then configure an email provider and verify a mailbox such as support@yourdomain.com. Do not publish an address on a domain you do not own.
 
-## Before public launch / charging
-You will need secure hosting, backend authentication, server-side course entitlements, a payment provider, privacy policy, terms, refund/cancellation terms, support contact, security review, accessibility testing and country-specific legal review. Do not sell personalized financial advice or signals without checking applicable licensing rules.
+## Local preview
+Open index.html in a modern browser. For PWA/service worker testing, serve the folder over HTTPS or localhost. Upload the contents of this folder to the existing GitHub Pages repository to publish the static prototype.
 
-## Suggested zero-budget next step
-Publish this static prototype using a free static-hosting tier after creating an account. A custom domain, backend, payment processing and native Android app may involve costs or additional setup.
+## Next production milestones
+1. Secure backend, authentication, database and role-based admin.
+2. Server-enforced premium entitlements and payment gateway integration after legal/tax/refund review.
+3. Publish professionally recorded video lessons and reviewed diagrams.
+4. Privacy policy, terms, refund policy, support mailbox and country-specific legal review.
+5. Android packaging and Play Store compliance review.
+
+## Educational scope
+TradeX Academy is intended for general education only. It is not a broker, exchange, investment adviser, research analyst or signal provider. All charts and exercises are fictional; no personalized investment recommendations are provided. Rules differ by country and should be reviewed before commercial launch.
